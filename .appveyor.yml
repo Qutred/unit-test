@@ -1,15 +1,21 @@
 image: Ubuntu  # образ для сборки
 
-stack: node 18.13.0  # окружение
-
+# Test against the latest version of this Node.js version
+environment:
+  nodejs_version: "18"
+  
 branches:
   only:
     - master  # ветка git
 
 cache: node_modules  # кеширование
 
+# Install scripts. (runs after repo cloning)
 install:
-  - npm install  # команда установки зависимостей
+  # Get the latest stable version of Node.js or io.js
+  - ps: Install-Product node $env:nodejs_version
+  # install modules
+  - npm install
 
 build: off  # отключаем встроенную в appveyor систему сборки
 

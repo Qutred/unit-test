@@ -1,4 +1,4 @@
-# Домашнее задание к лекции «Unit-тестирование»
+# Домашнее задание к лекции «Unit-тестирование» [![Build status](https://ci.appveyor.com/api/projects/status/l1coa0wsb4ikhm2o?svg=true)](https://ci.appveyor.com/project/Qutred/unit-test-5vpem)
 
 **Важно**: каждая задача выполняется в виде отдельного проекта с собственным GitHub репозиторием.
 
